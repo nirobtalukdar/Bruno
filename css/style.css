@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    padding: 0 1rem;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/* Desktop View */
+.navbar input[type='checkbox'],
+.navbar .hamburgerLine{
+    display: none;
+}
+/* Desktop View */
+/* Common Css */
+#header{
+    position: relative;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    align-items: center;
+}
+.navMenu li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    position: relative;
+}
+.navMenu li::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: #FB4529;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navMenu li:hover a{
+    color: #FB4529;
+}
+.navMenu li:hover::after{
+    opacity: 1;
+}
+.navMenu li:last-child{
+    margin-right: 0;
+}
+.navMenu .navMenuActive{
+    color: #FB4529;
+}
+.navMenu .navMenuActive::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: #FB4529;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navMenu a{
+    font-size: 1.3rem;
+    color: #111;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+
+.navSocialIcon li{
+    display: inline-block;
+    margin-left: 3.5rem;
+}
+.navSocialIcon li a{
+    font-size: 2.5rem;
+    color: #111;
+    transition: all linear .3s;
+}
+.navSocialIcon li:hover a{
+    color: #FB4529;
+}
+#header .headerText{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    text-align: center;
+}
+#header .headerText h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 7.5rem;
+}
+/* Header Css */
+/* About Css */
+#about{
+    padding: 5rem 0;
+}
+.aboutContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutImg{
+    width: 50rem;
+    height: 70rem;
+    border-radius: 250px;
+    border: 3px solid #FB4529;
+    padding: 3rem;
+    filter: grayscale(1);
+    transition: all linear .7s;
+}
+.aboutImg:hover{
+    filter: grayscale(0);
+}
+.aboutImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.lContentBox{
+    margin-bottom: 6rem;
+}
+.lContentBox h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #AFA8A1;
+    margin-bottom: 1.5rem;
+    letter-spacing: .2rem;
+}
+.lContentBox p, a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #111;
+}
+.aboutRcontentBox{
+    text-align: right;
+    margin-bottom: 4rem;
+}
+.aboutRcontentBox h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #AFA8A1;
+    margin-bottom: 1.5rem;
+    letter-spacing: .2rem;
+}
+.aboutRcontentBox span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #111;
+    display: inline-block;
+    font-weight: 500;
+}
+/* About Css */
+/* About Banner Css */
+#aboutBanner{
+    padding: 10rem 0;
+}
+
+.aboutBannerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 2px solid #111;
+    flex-wrap: wrap;
+}
+.aboutBannerImg{
+    cursor: pointer;
+}
+.aboutBannerImg img{
+   width: 100%; 
+}
+
+/* About Banner Css */
+/* Advantage Css */
+#advantage{
+    padding: 0rem 0rem 10rem 0rem;
+}
+.advantageHeading{
+    text-align: center;
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+.advantageContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.advantageBox{
+    text-align: center;
+}
+.advantageImg{
+    filter: grayscale(1);
+    background: #F2F2F2;
+    padding: 5rem;
+    border-radius: 200px;
+    transition: all linear .3s;
+}
+.advantageImg img{
+    transition: all linear 1s;
+}
+.advantageImg:hover img{
+    animation: shake .3s 1;
+}
+@keyframes shake{
+    0%{
+        transform: translateY(-5Px);
+    }
+    25%{
+        transform: translateY(-10Px);
+    }
+    50%{
+        transform: translateY(-20Px);
+    }
+    75%{
+        transform: translateY(-10Px);
+    }
+    100%{
+        transform: translateY(0Px);
+    }
+}
+.advantageImg:hover{
+    filter: grayscale(0);
+}
+.advantageImg h6{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.advantageBox p{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #AFA8A1;
+    margin-top: 2rem;
+}
+/* Advantage Css */
+/* Education Css */
+#education{
+    padding: 10rem 0;
+    border-bottom: 1px solid #000000;
+}
+.educationHeader{
+    text-align: center;
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+.educationContent{
+    display: flex;
+    justify-content: space-between;
+}
+.year{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #AFA8A1;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+.subContentBox{
+    margin-bottom: 3rem;
+}
+.subContentBox:last-child{
+    margin-bottom: 0;
+}
+.subContentBox h4{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+.subContentBox p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #AFA8A1;
+    margin-top: 1rem;
+}
+/* Education Css */
+/* Project Css */
+#project{
+    padding: 10rem 0;
+    border-bottom: 1px solid #000000;
+}
+.projectHeader{
+    text-align: center;
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+.projectContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projectContentBox{
+    width: 30%;
+    margin-bottom: 10rem;
+    filter: grayscale(1);
+    transition: all linear .5s;
+}
+.projectContentBox:hover{
+    filter: grayscale(0);
+}
+.projectContentBox img{
+    width: 100%;
+    transition: all linear .5s;
+}
+.projectContentBox:hover img{
+    transform: scale(1.1);
+}
+.projectImg{
+    overflow: hidden;
+}
+
+.projectImgContent span{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #AFA8A1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.projectImgContent h3{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.projectImgContent h3::after{
+    content: '';
+    position: absolute;
+    height: .3rem;
+    width: 0%;
+    top: 5rem;
+    left: 0;
+    background: #FB4529;
+    transition: all linear .5s;
+}
+.projectContentBox:hover h3::after{
+    width: 100%;
+}
+/* Project Css */
+/* People Say */
+#peopleSay{
+    padding: 15rem 0 10rem 0;
+}
+.peopleSayContent{
+    text-align: center;
+}
+.peopleSayContent h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+.peopleSayContent h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.peopleSayContent p{
+    font-family: 'Montserrat', sans-serif;
+    color: #AFA8A1;
+    font-size: 1.5rem;
+}
+.peopleSayContent p a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #FB4529;
+}
+/* People Say */
+/* BrunoBanner Css */
+#BrunoBanner{
+    padding: 5rem 0 10rem 0;
+}
+.BrunoBannerHeader{
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+.BrunoBannerContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.BrunoBannerImg{
+    width: 19%;
+    position: relative;
+}
+.BrunoBannerImg img{
+    width: 100%;
+    display: block;
+}
+.BrunoBannerImg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.705);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.BrunoBannerImg a{
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+    opacity: 0;
+    transition: all linear .5s;
+}
+.BrunoBannerImg:hover::before{
+    opacity: 1;
+}
+.BrunoBannerImg:hover a{
+    opacity: 1;
+}
+/* BrunoBanner Css */
+/* Call Bruno Css */
+#callBruno{
+    padding: 5rem 0 10rem 0;
+}
+.CallBrunoText{
+ width: 60rem;
+ padding: 10rem;
+ border-radius: 100%;
+ margin: 0 auto;
+ border: 2px dashed #FB4529;
+}
+.CallBrunoText h6{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #AFA8A1;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.CallBrunoText h2{
+    font-size: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparent;
+    color: #111;
+    position: relative;
+    display: inline-block;
+}
+.CallBrunoText h2::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #FB4529;
+    width: 0%;
+    overflow: hidden;
+    transition: all linear 1s;
+}
+.CallBrunoText:hover h2::before{
+    width: 100%;
+}
+.CallBrunoText .CallBrunoIcon{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #FB4529;
+}
+/* Call Bruno Css */
+/* Footer Css */
+#footer{
+    padding: 10rem 0;
+    border-top: 1px solid #111;
+}
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footerContent p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #AFA8A1;
+}
+.footerContent a{
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #AFA8A1;
+    transition: all linear .3s;
+}
+.footerContent a:hover{
+    color: #FB4529;
+}
+.footerContent ul  li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+.footerContent ul li a{
+    font-size: 2.5rem;
+}
+/* Footer Css */
