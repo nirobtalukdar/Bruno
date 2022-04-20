@@ -637,7 +637,7 @@ ul li{
     .footerContent a{
         margin: 2rem 0;
     }
-    .footerContent ul  li:last-child{
+    .footerContent ul  li:first-child{
         margin-left: 0;
     }
     #footer{
