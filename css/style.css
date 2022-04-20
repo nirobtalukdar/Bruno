@@ -535,3 +535,113 @@ ul li{
     font-size: 2.5rem;
 }
 /* Footer Css */
+/* Responsive Css */
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navLogo{
+        margin: 2rem 0;
+    }
+    .navSocialIcon li:first-child{
+        margin-left: 0;
+    }
+    #header{
+        height: 38vh;
+    }
+    #header .headerText{
+        display: none;
+    }
+    .aboutContent{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .aboutLcontent{
+        width: 100%;
+        text-align: center;
+    }
+    .aboutImg{
+        width: 100%;
+        height: 50rem;
+    }
+    .aboutRContent{
+        margin-top: 5rem;
+    }
+    .aboutRcontentBox{
+        text-align: center;
+    }
+    #aboutBanner{
+        display: none;
+    }
+    .advantageImg{
+        padding: 4rem;
+    }
+    .advantageBox p{
+        margin-bottom: 5rem;
+    }
+    #education{
+        padding: 0;
+        border: none;
+    }
+    .educationHeader{
+        font-size: 3rem;
+    }
+    .educationContent{
+        flex-direction: column;
+    }
+    .educationContentBox{
+        margin-bottom: 10rem;
+        text-align: center;
+    }
+    .year{
+        color: #FB4529;
+    }
+    #project{
+        border: 0;
+        padding: 0;
+    }
+    .projectHeader{
+        font-size: 3rem;
+    }
+    .projectContentBox{
+        width: 100%;
+    }
+    .projectContentBox:last-child{
+        margin-bottom: 0;
+    }
+    #peopleSay{
+        padding: 5rem 0 0 0;
+    }
+    .BrunoBannerHeader{
+        font-size: 2.5rem;
+    }
+    .BrunoBannerImg{
+        width: 100%;
+    }
+    .CallBrunoText h2{
+        font-size: 3rem;
+    }
+    .CallBrunoText h6{
+        margin-bottom: 1rem;
+    }
+    .CallBrunoText {
+        width: 34rem;
+        padding: 7rem;
+        border-radius: 100%;
+        margin: 0 auto;
+        border: 2px dashed #FB4529;
+    }
+    .footerContent{
+        flex-direction: column;
+    }
+    .footerContent a{
+        margin: 2rem 0;
+    }
+    .footerContent ul  li:last-child{
+        margin-left: 0;
+    }
+    #footer{
+        padding: 0 0 5rem 0;
+        border: none;
+    }
+}
